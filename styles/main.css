@@ -1,0 +1,227 @@
+* {
+	margin: 0;
+}
+/**tree spruce: tree_spruce_branch_colorpalette_ju5l6
+but also should try: grass_plant_grass_family_colorpalette_7sp08
+and
+eyewear_glasses_vision_care_colorpalette_canmi
+**/
+@font-face {
+	font-family: "Roboto",
+	src: url("./fonts/Roboto-Regular.ttf") format("ttf");
+}
+body, html {
+	font-color:#474316;
+	background-color:#fbf6e4;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	font-family: "Roboto", sans-serif;
+}
+
+.navigation_bar {
+	position: fixed;
+	top:0;
+	margin: auto;
+	max-width: 1000px;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	padding-bottom: 5px;
+	background-color:#0d0c11; 
+	justify-content: space-around;
+	font-size: 32px;
+}
+.navigation_bar > div {
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.navigation_bar a {
+	color: #fbf6e4;
+	text-decoration: none;
+	text-align: center;
+}
+/** change color on hover**/
+.navigation_bar a:hover {
+	background-color: #fbf6e4;
+	color: #0d0c11; /**change**/
+	padding: 15px;
+}
+@media screen and (max-width: 800px) {
+	.navigation_bar {
+		position: fixed;
+		width: 100%;
+		overflow: hidden;
+		padding: 2px;
+		font-size: 32px;
+			}
+}
+@media screen and (max-width: 600px) {
+	.navigation_bar {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		font-size: 19px;
+		margin-bottom: 30px;
+			}
+}
+
+.section_header {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.section_header > img {
+	width: 40vw;
+	height: auto;
+}
+.section_header > div {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.first_sec {background-color: #0d0c11/**1f180a**/;}
+.second_sec {background-color: #8a8832;}
+.third_sec {background-color: #9d5a23;}
+.fourth_sec {background-color: #1f180a;}
+.header_title {
+	text-align: center;
+	color: #fbf6e4;
+	margin: auto;
+}
+@media screen and (max-width: 800px) {
+	.section_header > img {width: 100vw; height: auto;}
+}
+@media screen and (max-width: 800px) {
+	.section_header > div {width: 100vw; height: auto;}
+}
+
+h1 {
+	font-size: 44px;
+	margin: 0;
+	padding: 10px;
+}
+@media screen and (max-width: 800px) {
+	h1 {font-size: 32px;}
+}
+@media screen and (max-width: 600px) {
+	h1 {font-size: 28px;
+		padding: 2px;}
+}
+
+h2 {font-size: 40px;
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	color:#8a8832;
+	text-shadow: 1px 1px 3px #8a8832;
+}
+@media screen and (max-width: 800px) {
+	h2 {font-size: 28px;}
+}
+@media screen and (max-width: 600px) {
+	h2 {font-size: 26px;}
+}
+
+h3 {font-size: 26px;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+}
+@media screen and (max-width: 800px) {
+	h3 {font-size: 26px;}
+}
+@media screen and (max-width: 600px) {
+	h3 {font-size: 24px;}
+}
+
+p {
+	font-size: 20px;
+	text-align: left;
+	margin: 5px;
+	line-height: 1.5;
+	padding-top: 10px;
+	justify-content: center;
+}
+@media screen and (max-width: 800px) {
+	p {font-size: 22px;
+		padding: 7px;
+		margin: 7px;
+	}
+}
+@media screen and (max-width: 600px) {
+	p {
+		font-size: 20px;
+		padding: 4px;
+		margin: 5px;
+	}
+}
+
+strong {color: #1f180a;}
+#tags {
+	color:#9d5a23;
+	font-style: italic;
+	text-align: center;
+}
+.columns {
+	float: left;
+}
+.columns_home {
+	justify-content: center;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.columns_home, .column.main, .column.side {
+		width: 100%;
+		padding: 2px;
+	}
+}
+.citation {
+	font-style: italic bold;
+}
+
+ul.circle {
+	/**list-style-image: url('/list_round.jpg');**/
+	list-style-type: circle;
+	padding: 5px 20px 2px 85px;
+	overflow: hidden;
+	top: 0;
+}
+li{
+	font-size: 24px;
+	line-height:1;
+	letter-spacing:1px;
+	margin: 5px;
+}
+ul.square {
+	list-style-type: square;
+	padding: 5px 20px 2px 85px;
+	overflow: hidden;
+	top: 0;
+}
+/** color for the links**/
+.link-color {
+	color: #9f9b88;
+}
+.footer {
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	background-color: #c4a767;
+}
+.footer_words{
+	font-size: 14px;
+	margin: 0px;
+	line-height: .5;
+	color: #1f180a;
+}
+@media screen and (max-width: 600px) {
+	.footer{
+		font-size: 12px;
+	}
+}

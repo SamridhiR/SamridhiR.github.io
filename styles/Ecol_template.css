@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+}
+/**color palette: reflection_nature_green_colorpalette_ru6wt**/
+@font-face {
+	font-family: "Kalam",
+	src: url("./fonts/Kalam-Bold.ttf") format("ttf");
+}
+
+body, html {
+	color:#17411d/**3e5012**/;
+	background-color:#eef0f1/**d1cf91**/;
+	font-family: 'Kalam', cursive;
+	max-width: 1000px;
+	justify-content: center;
+	margin: auto;
+}
+.navbar {
+	position: relative;
+	margin-top:0;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	background-color: #10160f/**#d1cf91**/; 
+	justify-content: center;
+	font-size: 30px;
+}
+.navbar a {
+	color: #eef0f1;
+	padding: 0px 15px;
+	text-decoration: none;
+	text-align: center;
+}
+/** change color on hover**/
+.navbar a:hover {
+	background-color: #eef0f1;
+	color: #10160f;
+}
+.headerimg > img {
+	max-width: 1000px;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+h1 {
+	font-size: 36px;
+	justify-content: center;
+	color: #765928/**#13495e**/;
+}
+h2 {
+	font-size: 30px;
+	color: #1286b6/**#8e9247**/;
+}
+h3 {
+	font-size: 30px;
+	color: #84aa89;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+p {
+	font-size: 22px;
+	justify-content: center;
+	text-align: left;
+	line-height: 1.5;
+}
+#tags {
+	color:#3e8a3d;
+	font-style: italic;
+	text-align: center;
+}
+.column {float: left;}
+.column.left {
+	width: 75%;
+	padding: 5px;
+	float: left;
+}
+.column.right{
+	width: 23%;
+	box-sizing: 200px;
+	float: right;
+	padding: 3px;
+	background-color: #c0c39d;
+	margin-right: 0px;
+}
+/*@media screen and (max-width: 850px) {
+	.navbar {
+		margin: 0px;
+		position: absolute;
+		width: 100%;
+			}
+}
+ 
+.column {
+	float: left;
+/** iwant to change the background color, but only for the edu template
+	background-color: #ececbe;/f3f3bd**/
+/*.column.left {
+	width: 75%;
+}
+.column.right {
+	width: 25%;
+}
+@media screen and (max-width: 600px) {
+	.column.left, .column.right {
+		width: 100%;
+	}
+}
+
+h1{
+	font-size: 56px;
+	text-align: center;
+	margin:0;
+}
+h2 {
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+}
+.blur {
+	backdrop-filter: blur(0.6px);
+	height: 100vh;
+	width: 100%
+}
+*/
+.footer{
+	background-color: #47552a;
+}
