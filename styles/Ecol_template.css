@@ -70,13 +70,12 @@ p {
 }
 .column {float: left;}
 .column.left {
-	width: 75%;
+	width: 62%;
 	padding: 5px;
 	float: left;
 }
 .column.right{
-	width: 23%;
-	box-sizing: 200px;
+	width: 30%;
 	float: right;
 	padding: 3px;
 	background-color: #c0c39d;
@@ -129,5 +128,6 @@ h3 {
 }
 */
 .footer{
-	background-color: #47552a;
+	background-color: #cea854/**47552a**/;
+	color: #e0dbda;
 }

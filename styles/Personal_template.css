@@ -9,8 +9,8 @@ insect_flora_membrane_winged_insect_colorpalette_xiy9a**/;
 }
 
 body, html {
-	color:#485113/**313939/**#35506a**/;
-	background-color:#f1e8e0/**f0ede7**/;
+	color:#2b3310;
+	background-color:#f0e9b9;
 	font-family: 'Kalam', cursive;
 	max-width: 1000px;
 	width: 100%;
@@ -29,34 +29,43 @@ body, html {
 	font-size: 30px;
 }
 .navbar a {
-	color: #f1e8e0/**f0ede7**/;
+	color: #f0e9b9;
 	padding: 0px 15px;
 	text-decoration: none;
 	text-align: center;
 }
 /** change color on hover**/
 .navbar a:hover {
-	background-color: #f1e8e0/**f0ede7**/;
+	background-color: #f0e9b9;
 	color: #10160f;
 }
 .headerimg > img {
 	width: 100%;
 	height: auto;
 }
+@media screen and (max-width:800px){
+	.headerimg > img {
+		width: 100%;
+		height: auto;
+	}
+} 
 h1 {
 	font-size: 36px;
 	justify-content: center;
-	color: #2c2c0d/**35506a/**#313939**/;
+	color: #635331;
+	padding:5px;
 }
 h2 {
 	font-size: 30px;
-	color: #ab9045/**646c53**/;
+	color: #808d2c/**c7d638**/;
+	padding: 5px;
 }
 h3 {
 	font-size: 30px;
-	color: #b8a982/**466d52**/;
+	color: #69b3b6;
 	padding-bottom: 5px;
 	padding-top: 15px;
+	padding: 5px;
 }
 p {
 	font-size: 22px;
@@ -65,8 +74,9 @@ p {
 	line-height: 1.5;
 }
 #tags {
-	color:#7d742a/**cea854/**8e966f**/;
+	color:#808d2c;
 	font-style: italic;
+	font-style: bold;
 	text-align: center;
 }
 .column {
@@ -77,20 +87,38 @@ p {
 }
 .column.right{
 	width: 30%;
-	padding: 5px;
-	background-color: #e0dbda/**c3bf9f**/;
+	padding: 10px;
+	background-color: #a6bb98 /**e4e048/**#c7e6f6*/;
 	float: right;
 }
-#footer{
+
+@media screen and (max-width: 800px) {
+	.column, .column.left, .column.right {
+		display: flex;
+		flex-wrap: wrap;
+		width: 95%;
+	}
+}
+.blur {
+	background-filter:blur(0.6px);
+/**	backdrop-filter: blur(0.6px);**/
+	height: 100vh;
+	width: 100%;
+}
+.beforeFoot {
+	padding:10px;
+}
+#footer {
 	clear: both;
-	background-color:black; 
-	color: white;
+	background-color:#a6bb98; 
+	color: #808d2c;
 	font-size: 16px;
 	align-items: center;
 	position: relative;
 	height: 50px;
 	margin-top: -200px;
 }
+
 /*@media screen and (max-width: 850px) {
 	.navbar {
 		margin: 0px;
@@ -130,10 +158,5 @@ h3 {
 	font-size: 30px;
 	text-align: center;
 	margin: 0;
-}
-.blur {
-	backdrop-filter: blur(0.6px);
-	height: 100vh;
-	width: 100%
 }
 */
