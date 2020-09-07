@@ -1,0 +1,414 @@
+* {
+	margin: 0;
+}
+
+@font-face {
+	font-family: "Kalam",
+	src: url("./fonts/Kalam-Bold.ttf") format("ttf");
+}
+
+body{
+	font-size: 36px; 
+	font-color:#182c23;
+	/**#235f71;#344158;3779c0;#393d11**/
+	background-color:#dddbdd;
+	/** #fbfbe9;#e4f9c1;#c0bea4**/
+	padding: 10px;
+	font-family: 'Kalam', cursive;
+}
+
+.section_header {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+.section_header > img {
+	width: 50vw;
+	height: auto;
+}
+.section_header > div {
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title_header {
+	background-color:#3d5852;
+	/**0d0c11;#5b5c4a;486fa8;3b4d67;774641;795f5d;884b46;684b39;b38872;705649**/
+}
+.about_header{
+	background-color:#577a7c;
+	/**#5e877f;466c46;#5e711b;**/
+}
+.contact_header {background-color: #6f746b;
+	/**8d6827;#ad9d2f;**/
+}
+.musings_header {
+	background-color: #6c6b67;
+	/**50766f;#96a55e;**/
+}
+.section_ps {
+	text-align: center;
+	color: #dddbdd/**#c0bea4;#393d11/**e4f9c1**/;
+	margin-top: 30px;
+}
+.bio_template {
+	display: center;
+}
+.bio_template > img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.edu_template {
+	background-color: #f3f3bd;
+	/**ececbe;**/
+}
+.edu_template > img {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #f3f3bd;/**ececbe;**/
+}
+.glossary {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+/** Header **/
+/**#header-nav{
+	background-color: #214c51/**#344158**//**;
+	border-radius: 0;
+	border:0;
+	margin:0;
+}**/
+/**.header{
+	padding: 50px;
+	text-align: center;
+	background-color: #fbfbef;
+	color: #214c51;
+	margin-top: 30px;
+}**/
+
+/** Logo-img/my pic img **/
+#Idhi-pic {
+	background: url('../main-pic.jpg') no-repeat;
+	background-color: #fbfbef;
+	width: 210px;
+	height:310px;
+	margin: 0;
+}
+.navbar {
+	position: fixed;
+	margin-top:0;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	background-color: #dddbdd/**#c0bea4;0d0c11**/; 
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar a {
+	color: #182c23/**#94958ae4f9c1**/;
+	padding: 0px 15px;
+	text-decoration: none;
+	text-align: center;
+}
+/** change color on hover**/
+.navbar a:hover {
+	background-color: #3d5852/**e4f9c1**/;
+	color: #dddbdd/**214c51**/;
+}
+@media screen and (max-width: 850px) {
+	.navbar {
+		margin: 0px;
+		position: absolute;
+		width: 100%;
+			}
+}
+
+@media screen and (max-width: 850px){
+	.section_header > img {
+		width: 100vw;
+		height: auto;
+	}
+}
+@media screen and (max-width: 850px){
+	.section_header > div {
+		width: 100vw;
+		height: auto;
+	}
+}
+@media screen and (max-width: 600px){
+	.title_header > img {
+		margin-top: 140px;
+	}
+}
+@media screen and (max-width: 600px){
+	h1 {
+		font-size: 32px;
+	}
+}
+@media screen and (max-width: 600px) {
+	h2 {
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 600px) {
+	h3 {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 600px) {
+	p {
+		font-size: 20px;
+		line-height:2;
+		letter-spacing:1px;
+		color:#242e26;
+	/**486a53;**/
+		padding: 2px 10px 2px 10px;
+	}
+}
+
+.row:after {
+	content: "";
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.main {
+	max-width: 1000px;
+	flex: 70%;
+	justify-content: center;
+	background-color: #dddbdd/**#c0bea4#e4f9c1**/;
+	padding: 20px;
+	margin-top: 30px;
+	margin: auto;
+}
+.side {
+	flex: 30%;
+	background-color: blue;
+	padding: 10px;
+	margin-top: 30px;
+} 
+.column {
+	float: left;
+/** iwant to change the background color, but only for the edu template
+	background-color: #ececbe;/f3f3bd**/
+}
+.column.left {
+	width: 75%;
+}
+.column.right {
+	width: 25%;
+}
+@media screen and (max-width: 600px) {
+	.column.left, .column.right {
+		width: 100%;
+	}
+}
+
+.footer {
+	padding: 0px;
+	text-align: center;
+	background-color: #214c51;
+	color: #e4f9c1;
+	font-size: 18px;
+	margin: 0px;
+}
+/** for responsive background...**/
+@media screen and (max-width: 600px) {
+	.navbar {
+		float: none;
+		flex-direction: column;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.section_header {
+		float: none;
+		flex-direction: column-reverse;
+		padding: 20px
+	}
+}
+@media screen and (max-width: 600px) {
+	.section_header, .title_header, .about_header, 
+	.contact_header, .musings_header > img {
+		flex-direction: column;
+		float: none;
+		width: 100vw;
+		height: auto;
+	}
+}
+h1{
+	font-size: 56px;
+	text-align: center;
+	margin:0;
+	/*padding: 20px 0;*/
+	color: #e3e4e3; /**#dddbdd;#fbfbef/#712323;**/
+	/*text-shadow: 3px 3px 3px #611f42;*/
+}
+h2 {
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+}
+.e {
+	color: #712323;
+}
+.b {
+	color: #4d7644;
+}
+h3 {
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+}
+.edu {
+	color: #6a5b89;
+}
+.bio {
+	color: #4d6394;
+}
+p {
+	font-size: 20px;
+	line-height:2;
+	letter-spacing:1px;
+	color:#242e26;
+	/**486a53;**/
+	margin: auto;
+	justify-content: center;
+}
+/**44660c/ 445121**/
+.education {
+	font-size: 20px;
+	line-height:2;
+	letter-spacing:1px;
+	color:#543f46;
+	padding:2px 20px 2px 20px;
+	background-color: #f3f3bd;
+}
+.biology {
+	font-size: 20px;
+	line-height:2;
+	letter-spacing:1px;
+	color:#2f512b;
+	padding:4px 20px 2px 20px;
+}
+ul.circle {
+	list-style-type: circle;
+	margin: 0;
+	padding-left: 5px 20px 2px 85px;
+	overflow: hidden;
+	background-color: #dddbdd/**#c0bea4#e4f9c1**/;
+	top: 0;
+}
+li{
+	/**float: left;**/
+	font-size: 20px;
+	line-height:1;
+	letter-spacing:1px;
+	color:#393d11/**#214c51**/;
+	padding:5px 20px 2px 15px;	
+}
+.link-color {
+	color: #455652;
+}
+/**li a {
+	display: block;
+	color: #214c51;
+	text-align: center;
+	padding: 4px 6px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+.active {
+	background-color: #ca4e02;
+}**/
+/**html{
+	background-color: #214c51/**344158**//**;
+	background-position: left;
+}
+body{
+	width: 800px;
+	margin: 0 auto;
+	background-color: #fbfbe9;
+	padding: 20px 20px 20px 20px;
+	border: 5px;
+}/**/
+/*img{
+	display: block;
+	margin:0 auto;
+}*/
+strong{
+	color:#214c51;
+}
+body, html{
+	height: 100%;
+}
+.bgimage {
+	background-image: url("../images/RIJAL-SAMRIDHI.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*height: 100vh;*/
+	width: 100%;
+}
+.blur {
+	backdrop-filter: blur(0.6px);
+	height: 100vh;
+	width: 100%
+}
+.bg-text {
+	background-color: #457533;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	font-weight: bold;
+	border:3px solid #e4f9c1;
+	position:absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 40px;
+	text-align: center;
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: #e4f9c1;
+}
+.flex-container > div {
+		display: inline-block;
+		width: 48%;
+		@media (max-width: 620px) {
+			width: 100%
+		}
+	}
+}
+.container {
+	border: 3px #e4f9c1;
+	padding: 0px 40px 40px;
+	max-width: cover;
+	&__image {
+		display: inline-block;
+		vertical-align: top;
+		width: 46%;
+		margin: 20px 30px 0 0;
+	}
+	&__text {
+		display: inline-block;
+		width: 46%;
+		@media (max-width: 620px) {
+			width: 100%
+		}
+	}
+}

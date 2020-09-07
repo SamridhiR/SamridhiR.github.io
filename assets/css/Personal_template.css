@@ -1,0 +1,29 @@
+body, html {
+	color:#2b3310;
+	background-color:#f0e9b9;
+	font-family: 'Kalam', cursive;
+}
+
+/* Default elements */
+
+h1 {
+	color: #635331;
+}
+h2 {
+	color: #808d2c/**c7d638**/;
+}
+h3 {
+	color: #69b3b6;
+}
+footer {
+	background-color:#a6bb98; 
+	color: #808d2c;
+}
+
+/* Elements by id */
+
+#tags {
+	color:#808d2c;
+	font-style: italic;
+	text-align: center;
+}

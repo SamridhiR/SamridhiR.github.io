@@ -1,0 +1,28 @@
+body,
+html {
+  color: #17411d /**3e5012**/;
+  background-color: #eef0f1 /**d1cf91**/;
+  font-family: "Kalam", cursive;
+}
+
+/* Default elements */
+
+h1 {
+  color: #765928 /**#13495e**/;
+}
+h2 {
+  color: #1286b6 /**#8e9247**/;
+}
+h3 {
+  color: #84aa89;
+}
+footer {
+  background-color: #cea854 /**47552a**/;
+  color: #e0dbda;
+}
+
+/* Element by id */
+
+#tags {
+  color: #3e8a3d;
+}

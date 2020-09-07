@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head_contents.html %}
+    <title>Personal Ruminations</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/Personal_template.css"
+    />
+  </head>
+
+  <body>
+    {% include navbar.html %}
+    <div class="headerimg">
+      <img src="/assets/img/perspers.jpg" />
+    </div>
+    <div class="column">
+      {% include post_content.html %} {% include footer.html %}
+    </div>
+  </body>
+</html>
