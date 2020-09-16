@@ -137,11 +137,6 @@ p {
 strong {
   color: #1f180a;
 }
-#tags {
-  color: #9d5a23;
-  font-style: italic;
-  text-align: center;
-}
 .columns {
   float: left;
 }

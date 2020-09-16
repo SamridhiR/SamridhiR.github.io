@@ -1,14 +1,8 @@
-<div class="postGrid">
-  <div class="columnLeft">
-    <h1>{{ page.title }}</h1>
-    <div>{{ page.date | date: "%-d %B %Y" }}</div>
-    {{ content }}
-  </div>
-  <div class="columnRight">
-    <h2>List of tags</h2>
-    <p>
-      Just some random stuff... or actually, could be the list of tags for
-      other articles
-    </p>
-  </div>
+<div class="pad">
+  <h1>{{ page.title }}</h1>
+  <div class="pad">{{ page.date | date: "%-d %B %Y" }}</div>
+    <div class="pad row">{% for tag in page.tags %}
+    {{tag}}{% unless forloop.last %}; {% endunless %}
+    {% endfor %}</div>
+  {{ content }}
 </div>
