@@ -18,6 +18,7 @@
 
 .section_header > img {
   width: 320px;
+  height: auto;
 }
 
 /* .section_header > div {
