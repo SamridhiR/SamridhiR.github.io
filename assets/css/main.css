@@ -1,15 +1,19 @@
+.title_banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  align-items: center;
+}
 .section_header {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  /*justify-content: space-between;
-  flex-wrap: wrap;*/
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
   margin-top: 40px;
   align-items: center;
 }
-.section_header > img {
-  /*width: 49%;*/
-  grid-column: span 1;
+.section_header > * {
+  max-width: 100%;
 }
 #portraitBox > img {
   width: 320px;
@@ -48,6 +52,7 @@
   text-align: center;
   color: #fbf6e4;
   margin: auto;
+  width: 100%;
 }
 /* @media screen and (max-width: 800px) {
   .section_header > img {
