@@ -48,7 +48,16 @@ p {
 input {
   margin: 5px;
 }
-
+.footer {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+.footer_words {
+  font-size: 14px;
+  margin: 0px;
+  line-height: 0.5;
+}
 /* add list stuff*/
 
 /* Elements by id */

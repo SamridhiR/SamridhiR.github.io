@@ -22,11 +22,12 @@ let getJson = async () => {
 })();
 
 let search = (searchString, tagList) => {
+  console.log(`searchString: ${searchString} tagList: ${tagList}`)
   if (searchString) {
     let strings = searchString.split(" ");
     searchString = "";
     for (const s of strings) {
-      searchString += `+content:${s}~3 `;
+      searchString += `+content:${s}~1 `;
     }
   }
   for (const tag of tagList) {
@@ -54,7 +55,7 @@ let displayResults = () => {
     let resultDiv = document.createElement("div");
     let a = document.createElement("a");
     a.href = result.ref;
-    console.log(lookUp)
+    // console.log(lookUp)
     a.innerText = lookUp[result.ref]
     resultsDiv.appendChild(a);
   }

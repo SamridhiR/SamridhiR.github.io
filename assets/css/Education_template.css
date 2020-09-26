@@ -1,24 +1,24 @@
 body,
 html {
-  color: #485113 /**313939/**#35506a**/;
-  background-color: #f1e8e0 /**f0ede7**/;
+  color: #485113 /**#08392b/**313939/**#35506a**/;
+  background-color: #FEF6F5/**#f1e8e0 /**f0ede7**/;
   font-family: "Kalam", cursive;
 }
 
 /* Default elements */
 
 h1 {
-  color: #2c2c0d /**35506a/**#313939**/;
+  color: #29660c/**#2c2c0d /**35506a/**#313939**/;
 }
 h2 {
-  color: #ab9045 /**646c53**/;
+  color: #578e87/**#ab9045 /**646c53**/;
 }
 h3 {
   color: #b8a982 /**466d52**/;
 }
 footer {
-  background-color: black;
-  color: white;
+  background-color: #578e87;
+  color: #f7e2c7;
 }
 
 /* Elements by id */
