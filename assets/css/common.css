@@ -82,6 +82,13 @@ input {
   display: flex;
   flex-wrap: wrap;
 }
+.small {
+	font-size: 20px;
+	font-style: italic;
+}
+.citation {
+	font-size: 24px;
+}
 
 /* Items */
 
