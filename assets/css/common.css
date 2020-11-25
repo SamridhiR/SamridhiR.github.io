@@ -152,7 +152,7 @@ figcaption {
 
 li {
   font-size: 20px;
-  line-height: 1.2;
+/*  line-height: 1.2;*/
   margin: 5px;
 }
 /* @media screen and (max-width: 800px) {
